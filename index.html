@@ -81,34 +81,69 @@
 <hr>
 <br>
 PHP基本语法的学习
-(http://i2.tiimg.com/728482/40230d70c34a38f0.png)
-变量一般格式$+变量名，然后用=赋值（声明过的变量，会替换成前面赋的值）
-下面我们看变量的赋值的例子
-(http://i2.tiimg.com/728482/15cc979a96c7ff17.png)
-(http://i2.tiimg.com/728482/14fa09440c736269.png)
- string是字符串值
-var_dump()输出的是变量类型，长度和值 echo输出的是变量和字符串
-unset（）；括号里面填写被释放的变量 结果输出为空
-如图
-(http://i2.tiimg.com/728482/9e1696d64d0caecb.png)
-(http://i2.tiimg.com/728482/776c53d3652cef7d.png)
-isset（）检验一个函数是否被编译 输入后检验 若无定义 则不显示 若已编译则如图
-(http://i2.tiimg.com/728482/59173ad263071900.png)
-(http://i2.tiimg.com/728482/fb8877f39a5853f0.png)
-!empty（）检验是否为空 如图
-(http://i2.tiimg.com/728482/440a246ceae63ccf.png)
-(http://i2.tiimg.com/728482/93ba61570aa70aa0.png)
-其中，为空，则显示空白， isset同理
-小结：不需要在使用变量之前声明一个变量 赋值与创建变量是同时
-(http://i2.tiimg.com/728482/ae2804c8fd83cca6.png)
+![Markdown](http://i2.tiimg.com/728482/40230d70c34a38f0.png)
 
-
-
-<p>php的命名规则<br>声明变量时区分大小写 但内置结构 关键字 用户 函数名等不需要如 echo 大小写皆可<br>变量名不能数字开头 要字母或下划线开头  例子如图<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/500b46ac84128743.png">http://i2.tiimg.com/728482/500b46ac84128743.png</a>)<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/1a2ecd1bfd699d81.png">http://i2.tiimg.com/728482/1a2ecd1bfd699d81.png</a>)</p>
-<p>变量的类型<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/bbafb4aaad2c179e.png">http://i2.tiimg.com/728482/bbafb4aaad2c179e.png</a>)<br>php弱类型语言变量类型由储存的数据决定<br>boolean逻辑判断 integer储存整数负整数0<br>float 双精度数 包含小数整数无法表达的字符 string 大小无限<br>数组可以存放多个数据 标量只能1个<br>对象 更高级的数据类型 变量由属性（表明状态）和方法（表明功能）<br>资源类型 保存外部资源引用 专门函数建立和使用 程序员一般创建使用释放<br>NULL 表示变量值为空<br>php弱类型语言变量类型由储存的数据决定 如图<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/2f82479be9fb8ada.png">http://i2.tiimg.com/728482/2f82479be9fb8ada.png</a>)<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/6179f5796742c0a7.png">http://i2.tiimg.com/728482/6179f5796742c0a7.png</a>)<br>结果是整型但，<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/d13e6787e99eacb3.png">http://i2.tiimg.com/728482/d13e6787e99eacb3.png</a>)<br>结果是<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/8ed13d51a304002c.png">http://i2.tiimg.com/728482/8ed13d51a304002c.png</a>)<br>php常用词<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/f67ea2c4b075cb51.png">http://i2.tiimg.com/728482/f67ea2c4b075cb51.png</a>)</p>
-<p>php常量<br>用于表示固定的数值 如圆周率π<br>常量由define（）函数定义<br>例如<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/10282f7083b7cb0f.png">http://i2.tiimg.com/728482/10282f7083b7cb0f.png</a>)<br>特点：不遵守变量范围规则 可在任何地方定义或访问<br>一但定义就不能改变<br>常量的值只能是标量 boolean integer float  string<br>常量总是大写，常量名不需加$<br>注意 没有声明的字符串即不加“”解析速度慢声明的大约八倍</p>
-<p>系统常量的使用<br>echo PHP_VERSION; 版本<br>echo PHP_OS; 操作系统名称 如图<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/13c570903fd13528.png">http://i2.tiimg.com/728482/13c570903fd13528.png</a>)</p>
-<p>魔术常量 根据位置改变<br><strong>LINE</strong> 显示行数 <strong>file</strong> 显示目录  如图<br>(<a target="_blank" rel="noopener" href="http://i2.tiimg.com/728482/ff6e202f20c0ad6f.png">http://i2.tiimg.com/728482/ff6e202f20c0ad6f.png</a>)</p>
+<p>变量一般格式$+变量名，然后用=赋值（声明过的变量，会替换成前面赋的值）</p>
+<p>下面我们看变量的赋值的例子</p>
+<p><img src="http://i2.tiimg.com/728482/9e1696d64d0caecb.png" alt="Markdown"><br><img src="http://i2.tiimg.com/728482/14fa09440c736269.png" alt="Markdown"></p>
+<p> string是字符串值</p>
+<p>var_dump()输出的是变量类型，长度和值 echo输出的是变量和字符串</p>
+<p>unset（）；括号里面填写被释放的变量 结果输出为空<br>如图<br><img src="http://i2.tiimg.com/728482/9e1696d64d0caecb.png" alt="Markdown"><br><img src="http://i2.tiimg.com/728482/776c53d3652cef7d.png" alt="Markdown"></p>
+<p>isset（）检验一个函数是否被编译 输入后检验 若无定义 则不显示 若已编译则如图<br><img src="http://i2.tiimg.com/728482/59173ad263071900.png" alt="Markdown"><br><img src="http://i2.tiimg.com/728482/fb8877f39a5853f0.png" alt="Markdown"></p>
+<p>.</p>
+<p>!empty（）检验是否为空 如图<br><img src="http://i2.tiimg.com/728482/440a246ceae63ccf.png" alt="Markdown"><br><img src="http://i2.tiimg.com/728482/93ba61570aa70aa0.png" alt="Markdown"></p>
+<p>其中，为空，则显示空白， isset同理</p>
+<p>小结：不需要在使用变量之前声明一个变量 赋值与创建变量是同时<br><img src="http://i2.tiimg.com/728482/ae2804c8fd83cca6.png" alt="Markdown"></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>php的命名规则</p>
+<p>声明变量时区分大小写 但内置结构 关键字 用户 函数名等不需要如 echo 大小写皆可</p>
+<p>变量名不能数字开头 要字母或下划线开头  例子如图<br><img src="http://i2.tiimg.com/728482/500b46ac84128743.png" alt="Markdown"><br><img src="http://i2.tiimg.com/728482/1a2ecd1bfd699d81.png" alt="Markdown"><br>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>变量的类型</p>
+<p><img src="http://i2.tiimg.com/728482/bbafb4aaad2c179e.png" alt="Markdown"></p>
+<p>php弱类型语言变量类型由储存的数据决定</p>
+<p>boolean逻辑判断 integer储存整数负整数0</p>
+<p>float 双精度数 包含小数整数无法表达的字符 string 大小无限</p>
+<p>数组可以存放多个数据 标量只能1个</p>
+<p>对象 更高级的数据类型 变量由属性（表明状态）和方法（表明功能）</p>
+<p>资源类型 保存外部资源引用 专门函数建立和使用 程序员一般创建使用释放</p>
+<p>NULL 表示变量值为空</p>
+<p>php弱类型语言变量类型由储存的数据决定 如图<br><img src="http://i2.tiimg.com/728482/2f82479be9fb8ada.png" alt="Markdown"><br><img src="http://i2.tiimg.com/728482/6179f5796742c0a7.png" alt="Markdown"></p>
+<p>结果是整型但，<br><img src="http://i2.tiimg.com/728482/d13e6787e99eacb3.png" alt="Markdown"></p>
+<p>结果是<br><img src="http://i2.tiimg.com/728482/8ed13d51a304002c.png" alt="Markdown"></p>
+<p>php常用词<br><img src="http://i2.tiimg.com/728482/f67ea2c4b075cb51.png" alt="Markdown"></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>php常量</p>
+<p>用于表示固定的数值 如圆周率π</p>
+<p>常量由define（）函数定义</p>
+<p>例如<br><img src="http://i2.tiimg.com/728482/10282f7083b7cb0f.png" alt="Markdown"></p>
+<p>特点：不遵守变量范围规则 可在任何地方定义或访问</p>
+<p>一但定义就不能改变</p>
+<p>常量的值只能是标量 boolean integer float  string</p>
+<p>常量总是大写，常量名不需加$</p>
+<p>注意 没有声明的字符串即不加“”解析速度慢声明的大约八倍<br>. </p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>系统常量的使用</p>
+<p>echo PHP_VERSION; 版本</p>
+<p>echo PHP_OS; 操作系统名称 </p>
+<p>如图<br><img src="http://i2.tiimg.com/728482/13c570903fd13528.png" alt="Markdown"></p>
+<p>魔术常量 根据位置改变</p>
+<p><strong>LINE</strong> 显示行数 <strong>file</strong> 显示目录  如图</p>
+<p><img src="http://i2.tiimg.com/728482/ff6e202f20c0ad6f.png" alt="Markdown"></p>
 
       
     </div>
