@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>wjw112200</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="title: 6date: 2020-11-19 15:05:34tags:   数组 一个数组可以插入多个值  查看数据类型 1.gettype(传入一个变量) 能够获得变量的类型 图 2.var_dump(传入一个变量) 输出变类型和值 图 判断数据类型 我们使用is_* 系列函数。 is_types这一系列的函数，来进行判断某个东西是不是某个类型。如果是这个类型返回真，不是这个类型返回假。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wjw112200">
+<meta property="og:url" content="http://example.com/2020/11/19/6/index.html">
+<meta property="og:site_name" content="wjw112200">
+<meta property="og:description" content="title: 6date: 2020-11-19 15:05:34tags:   数组 一个数组可以插入多个值  查看数据类型 1.gettype(传入一个变量) 能够获得变量的类型 图 2.var_dump(传入一个变量) 输出变类型和值 图 判断数据类型 我们使用is_* 系列函数。 is_types这一系列的函数，来进行判断某个东西是不是某个类型。如果是这个类型返回真，不是这个类型返回假。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-19T07:05:34.613Z">
+<meta property="article:modified_time" content="2020-11-19T07:36:11.293Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="wjw112200" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">wjw112200</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-6" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/19/6/" class="article-date">
+  <time datetime="2020-11-19T07:05:34.613Z" itemprop="datePublished">2020-11-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 6<br>date: 2020-11-19 15:05:34<br>tags:</p>
+<hr>
+<br>
+数组
+一个数组可以插入多个值
+
+<p>查看数据类型</p>
+<pre><code>1.gettype(传入一个变量) 能够获得变量的类型</code></pre>
+<p>图</p>
+<pre><code>2.var_dump(传入一个变量) 输出变类型和值</code></pre>
+<p>图</p>
+<p>判断数据类型</p>
+<p>我们使用is_* 系列函数。 is_types这一系列的函数，来进行判断某个东西是不是某个类型。如果是这个类型返回真，不是这个类型返回假。</p>
+<p>  如s_int （）是否为整型<br>is_bool 是否为布尔<br>is_float 是否是浮点</p>
+<p>配合if语句</p>
+<p>php数据类型之自动转换和强制转换<br>下面的情况是布尔值判断时的自动类型转换：</p>
+<p>1，整型的0为假，其他整型值全为真</p>
+<p>2, 浮点的0.0，布尔值的假。小数点后只要有一个非零的数值即为真。</p>
+<p>3，空字符串为假，只要里面有一个空格都算真。</p>
+<p>4，字符串的0，也将其看作是假。其他的都为真</p>
+<p>5，空数组也将其视为假，只要里面有一个值，就为真。</p>
+<p>6，空也为假</p>
+<p>也就是某特定数值有特定判断结果</p>
+<p>7, 未声明成功的资源也为假</p>
+<p>也就是某特定数值有特定判断结果</p>
+<p>二、类型转为数值<br>如图</p>
+<p>总结：</p>
+<p>布尔值的true参与运算是会变成整型或者浮点的1布尔值的false参与运算是会变成整型或者浮点的0字符串开始处是整型或浮点类型的字符，会转成对应的类型参与运算</p>
+<p>强制类型转换有三种方式：</p>
+<pre><code>1.用后面的三个函数可以完成类型转换，intval()、floatval()、strval()
+
+2.变量前加上()里面写上类型，将它转换后赋值给其他变量</code></pre>
+<p>图<br>    3.settype(变量，类型) 直接改变量本身<br>图</p>
+<p> .$目标变量 = (类型)$操作变量 只会改变目标变量的类型，不会改变原变量的类型，Settype是改变原值</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/19/6/" data-id="ckhoiu1bn0000l4t32g0d1yoe" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/11/20/7/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/11/17/5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/11/20/7/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/19/6/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/17/5/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/07/4/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/30/%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%AC%94%E8%AE%B0/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
